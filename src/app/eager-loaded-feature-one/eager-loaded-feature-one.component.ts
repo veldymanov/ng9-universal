@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-eager-loaded-feature-one',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EagerLoadedFeatureOneComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private title: Title,
+    private meta: Meta
+  ) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Angular Universal: EagerLoadedFeatureOneComponent');
+    this.meta.addTag({name: 'description', content: 'EagerLoadedFeatureOneComponent content'});
   }
 
 }
