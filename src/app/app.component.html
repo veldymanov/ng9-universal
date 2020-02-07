@@ -312,6 +312,30 @@
     </a>
 </div>
 
+<h1>Routes</h1>
+<nav>
+  <a
+    routerLink="/eager-loaded-first"
+    routerLinkActive="active"
+  >Eager loaded feature one</a>
+
+  <a
+    routerLink="/lazy-loaded-first"
+    routerLinkActive="active"
+  >Lazy loaded feature one</a>
+
+  <a
+    class="router-navigate"
+    (click)="navigateToLazy()"
+  >
+    Lazy loaded wia router.navigate
+  </a>
+</nav>
+
+<router-outlet></router-outlet>
+
+
+
 <div class="content" role="main">
 
   <!-- Highlight Card -->
@@ -525,18 +549,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<h1>Routes</h1>
-<nav>
-  <a
-    routerLink="/eager-loaded-first"
-    routerLinkActive="active"
-  >Eager loaded feature one</a>
-
-  <a
-    routerLink="/lazy-loaded-first"
-    routerLinkActive="active"
-  >Lazy loaded feature one</a>
-</nav>
-
-<router-outlet></router-outlet>

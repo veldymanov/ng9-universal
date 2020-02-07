@@ -4,11 +4,15 @@ import { Routes, RouterModule, Router, PreloadAllModules } from '@angular/router
 import { EagerLoadedFeatureOneModule } from './eager-loaded-feature-one/eager-loaded-feature-one.module';
 
 import { EagerLoadedFeatureOneComponent } from './eager-loaded-feature-one/eager-loaded-feature-one.component';
+import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/eager-loaded-first', pathMatch: 'full' },
+  {
+    path: '',
+    component: HomeComponent
+  },
   {
     path: 'eager-loaded-first',
     component: EagerLoadedFeatureOneComponent
@@ -25,9 +29,10 @@ const routes: Routes = [
   imports: [
     EagerLoadedFeatureOneModule,
     RouterModule.forRoot(routes, {
-      // enableTracing: true, // <-- debugging purposes only
-      // preloadingStrategy: PreloadAllModules
-    })],
+    initialNavigation: 'enabled',
+    // enableTracing: true, // <-- debugging purposes only
+    // preloadingStrategy: PreloadAllModules
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
