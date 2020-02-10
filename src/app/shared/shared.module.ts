@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AppNoShellRenderDirective } from './directives/app-no-shell-render.directive';
+import { AppShellNoRenderDirective } from './directives/app-shell-no-render.directive';
 import { AppShellRenderDirective } from './directives/app-shell-render.directive';
 
 import { MatMenuModule } from '@angular/material/menu';
@@ -31,7 +31,7 @@ const SHARED_COMPONENTS = [];
 const ENTRY_COMPONENTS = [];
 
 const SHARED_DIRECTIVES = [
-  AppNoShellRenderDirective,
+  AppShellNoRenderDirective,
   AppShellRenderDirective,
 ];
 

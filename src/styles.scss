@@ -60,3 +60,11 @@ $ng9-universal-theme: mat-light-theme($ng9-universal-primary, $ng9-universal-acc
 // that you are using.
 @include angular-material-theme($ng9-universal-theme);
 
+
+.spinner-container {
+  height: 360px;
+  margin: 100px auto;
+  text-align: center;
+  max-width: 100px;
+}
+
