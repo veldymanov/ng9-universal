@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { SharedModule } from '../../shared/shared.module';
 import { LazyLoadedFeatureOneRoutingModule } from './lazy-loaded-feature-one-routing.module';
 
 import { LazyLoadedFeatureOneComponent } from './lazy-loaded-feature-one.component';
@@ -8,7 +8,7 @@ import { LazyLoadedFeatureOneComponent } from './lazy-loaded-feature-one.compone
 
 @NgModule({
   imports: [
-    CommonModule,
+    SharedModule,
     LazyLoadedFeatureOneRoutingModule
   ],
   declarations: [

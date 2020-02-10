@@ -17,18 +17,26 @@
 
 <h1>Routes</h1>
 <nav>
-  <a mat-button
+  <a
+    mat-button
+    routerLink="/home"
+    routerLinkActive="active"
+  >Home</a>
+
+  <a
+    mat-button
     routerLink="/eager-loaded-first"
     routerLinkActive="active"
   >Eager loaded feature one</a>
 
-  <a mat-button
+  <a
+    mat-button
     routerLink="/lazy-loaded-first"
     routerLinkActive="active"
   >Lazy loaded feature one</a>
 
-  <a mat-button
-    class="router-navigate"
+  <a
+    mat-button
     (click)="navigateToLazy()"
   >
     Lazy loaded wia router.navigate
