@@ -1,1 +1,14 @@
-<p>home works!</p>
+<p>Home Component!</p>
+
+<h2>Courses</h2>
+
+<div *ngFor="let course of courses">
+  {{ course.longDescription }}
+</div>
+<br/>
+
+<h2>Course 1: Lessons</h2>
+
+<div *ngFor="let lesson of lessons">
+  {{ lesson.description }}
+</div>
