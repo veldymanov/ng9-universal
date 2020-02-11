@@ -1,5 +1,11 @@
 {
-  "projects": {
-    "default": "ng9-universal"
+  "targets": {
+    "ng9-universal-23da1": {
+      "hosting": {
+        "ng9-universal": [
+          "ng9-universal-23da1"
+        ]
+      }
+    }
   }
 }

@@ -168,8 +168,13 @@
           "configurations": {
             "production": {}
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng9-universal"
 }
