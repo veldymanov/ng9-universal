@@ -20,12 +20,14 @@ export class AppComponent implements OnInit {
     this.htmlTitle.setTitle('Angular Universal: AppComponent');
     this.meta.addTag({name: 'description', content: 'AppComponent content'});
 
-    this.meta.addTag({name: 'twitter:card', content: 'summary'});
-    this.meta.addTag({name: 'twitter:site', content: '@AngularUniv'});
-    this.meta.addTag({name: 'twitter:title', content: 'this.course.description AppComponent'});
-    this.meta.addTag({name: 'twitter:description', content: 'this.course.description AppComponent'});
-    this.meta.addTag({name: 'twitter:text:description', content: 'this.course.description AppComponent'});
-    this.meta.addTag({name: 'twitter:image', content: 'https://avatars3.githubusercontent.com/u/16628445?v=3&s=200'});
+    this.meta.addTags([
+      {name: 'twitter:card', content: 'summary'},
+      {name: 'twitter:site', content: '@AngularUniv'},
+      {name: 'twitter:title', content: 'this.course.description AppComponent'},
+      {name: 'twitter:description', content: 'this.course.description AppComponent'},
+      {name: 'twitter:text:description', content: 'this.course.description AppComponent'},
+      {name: 'twitter:image', content: 'https://avatars3.githubusercontent.com/u/16628445?v=3&s=200'}
+    ]);
   }
 
   public navigateToLazy(): void {
