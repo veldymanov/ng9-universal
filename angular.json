@@ -176,5 +176,8 @@
       }
     }
   },
-  "defaultProject": "ng9-universal"
+  "defaultProject": "ng9-universal",
+  "cli": {
+    "analytics": "27574cf0-9048-41bc-86c8-378313534748"
+  }
 }

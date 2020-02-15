@@ -43,14 +43,19 @@
   </a>
 </nav>
 
-<ng-container *appShellNoRender>
+<ng-container>
   <router-outlet></router-outlet>
+</ng-container>
+
+<ng-container *appShellNoRender>
+  <div>This content is not SS rendered</div>
 </ng-container>
 
 <div
   class="spinner-container"
   *appShellRender
 >
+  <div>This content is only SS rendered</div>
   <mat-spinner></mat-spinner>
 </div>
 

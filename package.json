@@ -13,7 +13,8 @@
     "build:ssr": "ng build --prod && ng run ng9-universal:server:production",
     "serve:ssr": "node dist/ng9-universal/server/main.js",
     "render:ssr": "npm run build:ssr && npm run serve:ssr",
-    "prerender": "ng run ng9-universal:prerender"
+    "prerender": "ng run ng9-universal:prerender",
+    "deploy:prerendered": "ng deploy --build-target ng9-universal:prerender"
   },
   "private": true,
   "dependencies": {

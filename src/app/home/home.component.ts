@@ -2,7 +2,6 @@ import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformServer } from '@angular/common';
 import { Title, Meta, makeStateKey, TransferState } from '@angular/platform-browser';
 
-import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 import { CoursesService } from '../core/services/courses.service';
